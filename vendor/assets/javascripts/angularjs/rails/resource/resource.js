@@ -276,7 +276,7 @@
                     var params;
 
                     if (this.config.defaultParams) {
-                        params = this.config.defaultParams;
+                        params = angular.copy(this.config.defaultParams);
                     }
 
                     if (angular.isObject(queryParams)) {
